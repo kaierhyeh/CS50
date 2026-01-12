@@ -1,27 +1,34 @@
 # My CS50 Progress
 
-這是我在 Harvard CS50: Introduction to Computer Science 課程的練習與作業整理。  
-每個作業資料夾都有對應程式碼或作品。
+Harvard CS50: Introduction to Computer Science 課程的作業與練習整理。 
 
 | Week | Project | Language | Description |
 |:---:|:-------|:--------|:-----------|
-| Week 0 - Scratch | [Scratch Project](./Scratch%20Project.sb3) | Scratch | Visual programming introduction |
-| Week 1 - C | [Hello / Mario More / Sentimental Hello / Sentimental Mario More](./mario-more) | C | 基礎 C 語言練習與小程式 |
-| Week 1 - C | [Readability / Sentimental Readability](./readability) | C | Text analysis, readability scores |
-| Week 2 - Arrays | [Cash / Credit / Sentimental Credit](./credit) | C | 算法與資料運算練習 |
-| Week 2 - Arrays | [DNA](./dna) | C | String manipulation & bioinformatics exercises |
-| Week 3 - Algorithms | [Plurality](./plurality) | C | 模擬選舉計票 |
-| Week 3 - Algorithms | [Runoff](./runoff) | C | Election runoff simulation |
-| Week 3 - Algorithms | [Scrabble](./scrabble) | C | 字謎遊戲程式設計 |
-| Week 4 - Memory | [Recover](./recover) | C | File recovery / Forensics |
-| Week 4 - Memory | [Filter More](./filter-more) | C | Image processing exercises |
-| Week 5 - Data Structures | [Fiftyville](./fiftyville) | C | 模擬城市管理遊戲 / OOP 練習 |
-| Week 5 - Data Structures | [Finance](./finance) | Python / SQL | Web application for stock trading |
-| Week 5 - Data Structures | [Homepage](./homepage) | Python / Flask | Web app project |
-| Week 5 - Data Structures | [Inheritance](./inheritance) | Python | Object-oriented programming |
-| Week 6 - Python | [Me](./me) | Python | Class and object exercises |
-| Artificial Intelligence | [Movies](./movies) | Python / SQL | Movie database application |
-| Week 7 - SQL | [Project](./project) | Python / Web | Web app or project assignment |
-| Week 8 - HTML, CSS, JavaScript | [Songs / Trivia / Volume](./songs) | C / Python | Data processing / Audio / Quiz exercises |
-| Week 9 - Flask | [Homepage](./homepage) | Python / Flask | Flask web app practice |
-| Week 10 - The End | Final project | Various | Final course project or summary |
+| 0 | [Starting from Scratch](./Scratch%20Project.sb3) | Scratch | Computational thinking and basic programming with Scratch. |
+| 1 | [Hello, It’s Me](./world/hello.c) | C | Intro to C programming and user interaction. |
+| 1 | [Mario (Less) / Mario (More)](./mario-more) | C | Practice loops and conditionals in C by building pyramids. |
+| 1 | [Cash / Credit](./credit) | C | Conditional logic and algorithm exercises in C. |
+| 2 | [Scrabble](./scrabble) | C | Implement word scoring logic using data structures. |
+| 2 | [Readability](./readability) | C | Text analysis and string handling in C. |
+| 2 | [Caesar / Substitution](./substitution) | C | Cryptography exercises using arrays and strings. |
+| 3 | [Sort](./sort) | C | Practice sorting fundamentals and algorithm efficiency. |
+| 3 | [Plurality](./plurality) | C | Simulate simple election counting. |
+| 3 | [Runoff / Tideman](./runoff) | C | Ranked-choice election simulations. |
+| 4 | [Volume](./volume) | C | Functions and mathematical computation in C. |
+| 4 | [Filter (Less) / Filter (More)](./filter-more) | C | Image manipulation and memory handling. |
+| 4 | [Recover](./recover) | C | File recovery and data parsing. |
+| 5 | [Inheritance](./inheritance) | Python | Python object-oriented programming concepts. |
+| 5 | [Speller](./speller) | C | Spell-check implementation using hash tables. |
+| 6 | [Sentimental / Hello](./sentimental-hello) | Python | Sentiment analysis version of basic Python ‘Hello’. |
+| 6 | [Sentimental / Mario (Less) / Mario (More)](./sentimental-mario-more) | Python | Python loops and logic with sentiment analysis. |
+| 6 | [Sentimental / Cash / Credit](./sentimental-credit) | Python | Algorithmic logic and sentiment analysis in Python. |
+| 6 | [Sentimental / Readability](./sentimental-readability) | Python | Text analysis with sentiment in Python. |
+| 6 | [DNA](./dna) | Python | DNA string manipulation exercise. |
+| 7 | [Songs](./songs) | C / Python | Data filtering and manipulation exercises. |
+| 7 | [Movies](./movies) | Python / SQL | Databases and SQL querying with Python. |
+| 7 | [Fiftyville](./fiftyville) | C | Simulation and data handling. |
+| 8 | [Trivia](./trivia) | C / Python | Interactive quiz logic implementations. |
+| 8 | [Homepage](./homepage) | Python / Flask | Web applications with HTML, CSS, JS, and Flask. |
+| 9 | [Birthdays](./birthdays) | Python | Data processing and user input/output exercises. |
+| 9 | [Finance](./finance) | Python / SQL | Financial application and database work. |
+| 10 | [Final Project](./project) | Various | Capstone project synthesizing course topics. |
