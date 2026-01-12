@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Stock Market
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <div class="section">
+            <h2>Stock Market</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Symbol</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ stock.name }}</td>
+                        <td>{{ stock.symbol }}</td>
+                        <td>{{ stock.price | usd}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+{% endblock %}

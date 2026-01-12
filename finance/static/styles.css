@@ -1,0 +1,85 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+/* Table Styles */
+.section
+{
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.section h2
+{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+table thead
+{
+    background-color: #537fbe;
+    color: white;
+}
+
+table th
+{
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+table tbody tr
+{
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:hover
+{
+    background-color: #f5f5f5;
+}
+
+table td
+{
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    color: #555;
+}
+
+table tbody tr:last-child
+{
+    border-bottom: none;
+}

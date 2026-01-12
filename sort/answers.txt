@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?: Omega is of the order of n, whilst the O is ~n^2.
+
+sort2 uses: Merge sort
+
+How do you know?: Seems to have a theta of 0.5~0.6.
+
+sort3 uses: Selection sort
+
+How do you know?: Theta is ~n^2.

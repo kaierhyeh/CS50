@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function() {
+
+                // Q1
+                // . for class, # for id.
+                document.querySelector('.correct').addEventListener('click', function() {
+                    document.querySelector('.correct').style.backgroundColor = 'lightgreen';
+                    document.querySelector('#result1').innerHTML = 'Correct! The ratio is about 4.5 sheep per person.';
+                });
+
+                let incorrect = document.querySelectorAll('.incorrect');
+                for (let i = 0; i < incorrect.length; i++) {
+                    incorrect[i].addEventListener('click', function() {
+                        incorrect[i].style.backgroundColor = 'pink';
+                        document.querySelector('#result1').innerHTML = 'Incorrect.';
+                    });
+                }
+
+                // Q2
+                document.querySelector('#check').addEventListener('click', function(event) {
+                    let input = document.querySelector('input');
+                    // Select the first input element.
+                    // Since we didn't assign a class nor an id, we can't use .input or #input.
+                    if (input.value.trim().toLowerCase() === 'switzerland')
+                    {
+                        input.style.backgroundColor = 'lightgreen';
+                        document.querySelector('#result2').innerHTML = 'Correct!';
+                    }
+                    else
+                    {
+                        input.style.backgroundColor = 'pink';
+                        document.querySelector('#result2').innerHTML = 'Incorrect.';
+                    }
+                    event.preventDefault();
+                    // By default, submitting a form reloads the page.
+                    // When using:
+                    // document.querySelector('form').addEventListener('submit', function(event) {});
+                    // JS 改 style 的動作可能被瀏覽器內部檢查覆蓋（focus 或被「表單控件重置」，原本的 style 沒立即生效）。
+                    // 只有當手動觸發 input 的事件（input/change）時，瀏覽器重新計算樣式，顏色才出現。
+                    // 使用 setTimeout 或 click 事件都能避開這個問題。
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                 <h3>What is the approximate ratio of people to sheep in New Zealand?</h3>
+                 <!-- Can use id but class is better.-->
+                 <button class="incorrect"> 12 people per 1 sheep</button>
+                 <button class="incorrect"> 4 people per 1 sheep</button>
+                 <button class="incorrect"> 1 people per 1 sheep</button>
+                 <button class="correct"> 1 people per 4 sheep</button>
+                 <button class="incorrect"> 1 people per 12 sheep</button>
+            </div>
+            <p id="result1"></p>
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                 <h3>In which country is it illegal to own one guinea pig, as a lone genea pig might get lonely?</h3>
+                 <form>
+                    <input placeholder="Country" type="text">
+                    <button id="check">Check Answer</button>
+                 </form>
+                 <p id="result2"></p>
+            </div>
+            <button onclick="window.location.href='index.html'"> Go back to Homepage</button>
+        </div>
+    </body>
+</html>

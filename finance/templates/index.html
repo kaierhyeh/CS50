@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <div class="mb-3">
+        <div>
+            <h2>Portfolio [{{ user.username }}]</h2>
+        </div>
+        <table class="section">
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Current Price</th>
+                    <th>Shares</th>
+                    <th>Current Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for stock in stocks %}
+                    {% if stock["type"] != "DEPOSIT" %}
+                        <tr>
+                            <td>{{ stock.symbol }}</td>
+                            <td>{{ stock.current_price | usd }}</td>
+                            <td>{{ stock.shares }}</td>
+                            <td>{{ stock.current_total | usd}}</td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+        <table class="section">
+            <thead>
+                <tr>
+                    <th>Cash</th>
+                    <th>Net Worth</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>{{ user.cash | usd }}</td>
+                        <td>{{ total_value | usd }}</td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

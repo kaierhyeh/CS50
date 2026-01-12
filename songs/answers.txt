@@ -1,0 +1,8 @@
+1. Characterizing aura:
+	Use:
+	SELECT AVG(energy), AVG(valence), AVG(danceability) FROM songs LIMIT 100;
+	to calculate and then assume the listener's audio aura being how energetic, positive and dynamic (leaning towards danceable songs).
+2. Improvement in the calculation:
+	The given algorithm doesn't consist of enough of traits of songs and the habits of the audience.
+	a. Weight the songs by their repetition.
+	b. Include speechiness and tempo.

@@ -1,0 +1,92 @@
+body {
+    background-color: gainsboro;
+    margin: 0;
+    transition: background-color 0.4s ease;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;    /* 上下排列 */
+    align-items: center;       /* 水平置中 */
+    justify-content: center;   /* 垂直置中 */
+    gap: 20px;
+}
+
+/* colors */
+.color-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 150px;          /* 可以控制頂部空間 */
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 2px solid #666;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;   /* Smoothen the transition to make it like animation. */
+}
+
+.red    { background-color: red; color: white; }
+.orange { background-color: orange; color: white; }
+.yellow { background-color: yellow; color: gray; }
+.green  { background-color: green; color: white; }
+.cyan   { background-color: cyan; color: white; }
+.blue   { background-color: blue;  color: white; }
+.purple { background-color: purple;  color: white; }
+.pink   { background-color: pink; color: white; }
+.brown  { background-color: brown;  color: white; }
+.gray   { background-color: gray;  color: white; }
+.black  { background-color: black;  color: white; }
+.white  { background-color: white; color: gray; }
+.gold   { background-color: gold; color: white; }
+.silver { background-color: silver; color: white; }
+.teal   { background-color: teal;  color: white; }
+.lime   { background-color: lime; color: white; }
+
+.color-box:hover {
+    transform: scale(1.2);      /* Enlarge the box. */
+    background-color: whitesmoke;
+    color: black;
+}
+
+/* A:has(B) {C}
+    If A has B element, then execute C. */
+body:has(.color-box.red:hover)    { background-color: red; }
+body:has(.color-box.orange:hover) { background-color: orange; }
+body:has(.color-box.yellow:hover) { background-color: yellow; }
+body:has(.color-box.green:hover)  { background-color: green; }
+body:has(.color-box.cyan:hover)   { background-color: cyan; }
+body:has(.color-box.blue:hover)   { background-color: blue; }
+body:has(.color-box.purple:hover) { background-color: purple; }
+body:has(.color-box.pink:hover)   { background-color: pink; }
+body:has(.color-box.brown:hover)  { background-color: brown; }
+body:has(.color-box.gray:hover)   { background-color: gray; }
+body:has(.color-box.black:hover)  { background-color: black; color: white; }
+body:has(.color-box.white:hover)  { background-color: white; color: black; }
+body:has(.color-box.gold:hover)   { background-color: gold; }
+body:has(.color-box.silver:hover) { background-color: silver; }
+body:has(.color-box.teal:hover)   { background-color: teal; }
+body:has(.color-box.lime:hover)   { background-color: lime; }
+
+button {
+    background-color: #d9edff;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+    margin-top: 30px;
+}

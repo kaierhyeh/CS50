@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <div class="mb-3">
+        <div>
+            <h2>Trade History [{{ user.username }}]</h2>
+        </div>
+        <table class="section">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Symbol</th>
+                    <th>Trade</th>
+                    <th>at</th>
+                    <th>Current Price</th>
+                    <th>Shares</th>
+                    <th>Current Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for stock in stocks %}
+                    <tr>
+                        <td>{{ stock.timestamp }}</td>
+                        <td>{{ stock.symbol }}</td>
+                        <td>{{ stock.type }}</td>
+                        <td>
+                            {% if stock.price %}
+                                {{ stock.price | usd }}
+                            {% else %}
+                                —
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if stock.current_price %}
+                                {{ stock.current_price | usd }}
+                            {% else %}
+                                —
+                            {% endif %}
+                        </td>
+                        <td>
+
+                            {% if stock.shares %}
+                                {{ stock.shares }}
+                            {% else %}
+                                —
+                            {% endif %}
+                        </td>
+                        <td>{{ stock.current_total | usd }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

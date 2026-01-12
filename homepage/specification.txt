@@ -1,0 +1,24 @@
+HTML Tags Used:
+1. <h1> – Used for main page titles.							Done!
+2. <p> – Used for paragraphs of text.							Done!
+3. <a> – Used for hyperlinks between pages.						Done!
+4. <img> – Used to display images.								Done!
+5. <ul> – Used to list items.									Done!
+6. <li> – Used for individual list items.						Done!
+7. <nav> – Used for the site’s navigation bar.					Done!
+8. <footer> – Used for footer content at the bottom of pages.	Done!
+9. <button> – Used for an interactive JavaScript button.		Done!
+10. <form> – Used for a simple contact form.					Done!
+
+CSS Properties Used (in styles.css):
+1. color – To style text color.									Done!
+2. background-color – To color backgrounds.						Done!
+3. margin – To space elements.									Done!
+4. padding – To add inner spacing.								Done!
+5. font-size – To adjust text size.								Done!
+
+Bootstrap Usage:
+Used Bootstrap’s navbar and grid system for layout and responsive design.
+
+JavaScript Usage:
+Added an interactive button that displays a greeting alert when clicked.
